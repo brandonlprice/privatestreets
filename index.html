@@ -57,7 +57,7 @@
 </head>
 <body>
 
-<span><div id="map"></div></span>
+<div id="map"></div>
 
 <script>
   var map = L.map('map').setView([34.18084, -118.308968], 9);
@@ -143,7 +143,7 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = "<span style='font-size:20px;font-weight: 800; color: white;text-shadow: .5px 1px black;position: relative;top:-11.5em;'><u>Private Street Request Types</u></span>";
+    this._div.innerHTML = "<span style='font-size:20px;font-weight: 800; color: white;text-shadow: .5px 1px black;position: relative;top:-11.5em;'><u>Types</u></span>";
 };
 
 info.addTo(map);
@@ -158,7 +158,7 @@ list.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 list.update = function (props) {
-    this._div.innerHTML = "<span style='font-size:15px;font-weight: 800; color: white;text-shadow: .5px 1px black;position: relative;top:2.75em;z-index: 1000;line-height: 2;'><p>Condo Tract</p><p>Mobile Home Park</p><p>School Campus</p><p>Single Family Residential</p><p>All</p></span>";
+    this._div.innerHTML = "<span style='font-size:15px;font-weight: 800; color: white;text-shadow: .5px 1px black;position: relative;top:2.75em;z-index: 1000;line-height: 2;'><p>Condo Tract</p><p>Mobile Home Park</p><p>School Campus</p><p>Single Family</p><p>All</p></span>";
 };
 
 list.addTo(map);
