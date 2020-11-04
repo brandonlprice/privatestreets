@@ -80,6 +80,15 @@
 	L.esri.basemapLayer('ImageryClarity').addTo(map);
 	L.esri.basemapLayer('ImageryTransportation').addTo(map);
 	
+var boundary1 = L.esri.featureLayer({
+			url: 'https://services9.arcgis.com/ZP6Sg2L0zjLDGQa9/arcgis/rest/services/unincorporatedAreas_merged/FeatureServer/0'
+		});
+  		boundary1.setStyle({
+  			color: '#000',
+			weight: .5,
+			fill: false
+		});
+	
   L.esri.featureLayer({
 		url: 'https://services9.arcgis.com/ZP6Sg2L0zjLDGQa9/arcgis/rest/services/privatestreets_160104_present/FeatureServer/0',
 		opacity: 0.95,
