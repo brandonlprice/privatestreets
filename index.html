@@ -79,7 +79,10 @@
 	var undevelopedboundingBox = L.rectangle(undevelopedbounds, {color: "yellow", weight: 1});
 	map.addLayer(undevelopedboundingBox);
 	
-  var undevelopedpopup = L.popup()
+  var undevelopedpopup = L.popup({
+        autoClose:false,
+    	closeOnClick:false
+      })
     .setLatLng(L.latLng(34.616725, -117.969721))
     .setContent('<p>Hello world!<br />This is a nice popup.</p>');
 	
@@ -88,7 +91,10 @@
 	var campusboundingBox = L.rectangle(campusbounds, {color: "red", weight: 1});
 	map.addLayer(campusboundingBox);
 	
-  var campuspopup = L.popup()
+  var campuspopup = L.popup({
+        autoClose:false,
+    	closeOnClick:false
+      })
     .setLatLng(L.latLng(34.050539, -117.825797))
     .setContent('<p>Hello world!<br />This is a nice popup.</p>');
 	
@@ -97,7 +103,10 @@
 	var mobilehomeboundingBox = L.rectangle(mobilehomebounds, {color: "blue", weight: 1});
 	map.addLayer(mobilehomeboundingBox);
 	
-  var mobilehomepopup = L.popup()
+  var mobilehomepopup = L.popup({
+        autoClose:false,
+    	closeOnClick:false
+      })
     .setLatLng(L.latLng(34.236880, -118.658112))
     .setContent('<p>Hello world!<br />This is a nice popup.</p>');
 	
@@ -106,7 +115,10 @@
 	var condoboundingBox = L.rectangle(condobounds, {color: "orange", weight: 1});
 	map.addLayer(condoboundingBox);
 	
-  var condopopup = L.popup()
+  var condopopup = L.popup({
+        autoClose:false,
+    	closeOnClick:false
+      })
     .setLatLng(L.latLng(33.983365, -117.866088))
     .setContent('<p>Hello world!<br />This is a nice popup.</p>');
 	
