@@ -60,7 +60,7 @@
 <div id="map"></div>
 
 <script>
-  var map = L.map('map').setView([34.236767, -118.658297], 9);
+  var map = L.map('map').setView([34.282306, -118.384333], 9);
 
   //L.esri.tiledMapLayer({
 	//	url: 'https://cache.gis.lacounty.gov/cache/rest/services/LACounty_Cache/LACounty_Base/MapServer',
@@ -107,7 +107,7 @@
         autoClose:false,
     	closeOnClick:false
       })
-    .setLatLng(L.latLng(34.236932, -118.658626))
+    .setLatLng(L.latLng(34.236767, -118.658297))
     .setContent('<p>Hello world!<br />This is a nice popup.</p>');
 	
 	var condobounds = L.latLngBounds([[33.980927, -117.864071], [33.985847, -117.867386]]);
@@ -140,7 +140,7 @@
 	}).addTo(map);
 	
 	var allbutton = L.easyButton ( 'fas fa-home', function(){
-		map.setView([34.236767, -118.658297], 9);
+		map.setView([34.282306, -118.384333], 9);
 	}).addTo(map);
 	
 	
