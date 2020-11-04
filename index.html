@@ -96,7 +96,7 @@
     	closeOnClick:false
       })
     .setLatLng(L.latLng(34.616725, -117.969721))
-    .setContent('<p><b>Antelope Valley</b><br />This area is undeveloped and so private streets here are usually extensions of where the public street ends.</p>');
+    .setContent('<p><b>Antelope Valley</b><br />This area is undeveloped and so private streets here are usually extensions of where the public street ends because they are easier to approve.</p>');
 	
 	var campusbounds = L.latLngBounds([[34.069631, -117.849581], [34.037120, -117.804073]]);
 	// create an orange rectangle
@@ -167,7 +167,7 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = "<span style='font-size:18px;font-weight: 800; color: white;text-shadow: .5px 1px black;position: relative;top:-13.5em;'>Types</span>";
+    this._div.innerHTML = "<span style='font-size:15px;font-weight: 800; color: white;text-shadow: .5px 1px black;position: relative;top:-13.5em;'>Types</span>";
 };
 
 info.addTo(map);
