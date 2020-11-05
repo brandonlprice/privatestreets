@@ -93,13 +93,13 @@ var boundary1 = L.esri.featureLayer({
 		});
   		boundary1.setStyle({
   			color: 'lightgray',
-			weight: .5
+			weight: .65
 		}).addTo(map);
 	
   L.esri.featureLayer({
 		url: 'https://services9.arcgis.com/ZP6Sg2L0zjLDGQa9/arcgis/rest/services/privatestreets_160104_present/FeatureServer/0',
 		opacity: 0.95,
-		color: 'white'
+		color: '#ebebeb'
   }).addTo(map);
   
   var undevelopedbounds = L.latLngBounds([[34.440735, -117.642257], [34.776072, -118.325764]]);
