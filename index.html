@@ -55,15 +55,15 @@
 		}
 	div.leaflet-bottom.leaflet-left {
     		background-color: lightgray;
-		opacity: .92;
+		opacity: .9;
 	    	z-index: 999;
 		left: .5em;
 		position: absolute;
-		width: 26%;
+		width: 15%;
 		bottom: 2em;
-	    	top: 38em;
+	    	top: 37em;
 		border: 1px solid black;
-		height: 34.5%;
+		height: 25.5%;
 		}
   </style>
 </head>
@@ -175,7 +175,7 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = "<span style='font-size:16px;font-weight: 800; color: white;text-shadow: .5px 1px black;position: relative;top:-15em;'>Types</span>";
+    this._div.innerHTML = "<span style='font-size:16px;font-weight: 800; color: white;text-shadow: .5px 1px black;position: relative;top:-14em;'>Types</span>";
 };
 
 info.addTo(map);
@@ -190,7 +190,7 @@ list.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 list.update = function (props) {
-    this._div.innerHTML = "<span style='font-size:15px;font-weight: 800; color: white;text-shadow: .5px 1px black;position: relative;top:1.43em;z-index: 1000;line-height: 2;right: 1em;'><p>Condo Tract</p><p>Mobile Home</p><p>School Campus</p><p>Single Family</p><p>All</p></span>";
+    this._div.innerHTML = "<span style='font-size:14px;font-weight: 700; color: white;text-shadow: .5px 1px black;position: relative;top:2.75em;z-index: 1000;line-height: 2.12;right: 1em;'><p>Condo Tract</p><p>Mobile Home</p><p>School Campus</p><p>Single Family</p><p>All</p></span>";
 };
 
 list.addTo(map);
