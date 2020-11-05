@@ -159,7 +159,7 @@ var boundary1 = L.esri.featureLayer({
 	var condobounds = L.latLngBounds([[33.980927, -117.864071], [33.985847, -117.867386]]);
 	// create an orange rectangle
 	var condoboundingBox = L.rectangle(condobounds, {color: "orange", weight: 1});
-	map.addLayer(condoboundingBox).bringToFront();
+	map.addLayer(condoboundingBox);
 	
   var condopopup = L.popup({
         autoClose:true,
