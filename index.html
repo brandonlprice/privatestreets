@@ -198,7 +198,7 @@ var boundary1 = L.esri.featureLayer({
 	
 	
 	var allbutton = L.easyButton ( 'fas fa-home', function(){
-		map.setView([34.282306, -118.384333], 9).addLayer(mobileshortpopup).addLayer(condoshortpopup).addLayer(campusshortpopup).addLayer(undevelopedshortpopup).removeLayer(undevelopedpopup);
+		map.setView([34.282306, -118.384333], 9).addLayer(mobileshortpopup).addLayer(condoshortpopup).addLayer(campusshortpopup).addLayer(undevelopedshortpopup).removeLayer(undevelopedpopup).removeLayer(campuspopup).removeLayer(condopopup).removeLayer(mobilehomepopup);
 	}).addTo(map);
 	
 	
