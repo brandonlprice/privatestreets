@@ -100,7 +100,7 @@
   50%  { opacity:0; }
   100% { opacity:1; }
 }
-div.leaflet-popup.leaflet-zoom-animated {
+.smoted {
    -webkit-animation: flickerAnimation .5s infinite;
    -moz-animation: flickerAnimation .5s infinite;
    -o-animation: flickerAnimation .5s infinite;
@@ -151,7 +151,8 @@ var boundary1 = L.esri.featureLayer({
 
   var undevelopedshortpopup = L.popup({
     	autoClose:false,
-	 closeOnClick:false
+	 closeOnClick:false,
+	 className: smoted
       })
     .setLatLng(L.latLng(34.616725, -117.969721))
     .setContent('<p><b>The Antelope Valley</b></p>');	
@@ -170,7 +171,8 @@ var boundary1 = L.esri.featureLayer({
 
  var campusshortpopup = L.popup({
     	autoClose:false,
-	closeOnClick:false
+	closeOnClick:false,
+	className: smoted
       })
     .setLatLng(L.latLng(34.050539, -117.825797))
     .setContent('<p><b>Cal Poly Pomona</b></p>');
@@ -189,7 +191,8 @@ var boundary1 = L.esri.featureLayer({
 
  var mobileshortpopup = L.popup({
     	autoClose:false,
-	 closeOnClick:false
+	 closeOnClick:false,
+	 className: smoted
       })
     .setLatLng(L.latLng(34.236803, -118.658469))
     .setContent('<p><b>Summit Mobile Homes</b></p>');
@@ -209,7 +212,8 @@ var boundary1 = L.esri.featureLayer({
  
  var condoshortpopup = L.popup({
     	autoClose:false,
-	closeOnClick:false
+	closeOnClick:false,
+	className: smoted
       })
     .setLatLng(L.latLng(33.983356, -117.865723))
     .setContent('<p><b>Palatine Hills</b></p>');
