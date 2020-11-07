@@ -219,19 +219,19 @@ var boundary1 = L.esri.featureLayer({
     .setContent('<p><b>Palatine Hills</b></p>');
 	
   var condoTract = L.easyButton ( 'far fa-square fa-xs', function(){
-		map.setView([33.983365, -117.866088], 17).openPopup(condopopup);
+		map.setView([33.983365, -117.866088], 17).removeClass('smoted').openPopup(condopopup);
 	}).addTo(map);
 	
 	 var mobileHome = L.easyButton ( 'far fa-square fa-sm', function(){
-		map.setView([34.236679, -118.658705], 16).openPopup(mobilehomepopup);
+		map.setView([34.236679, -118.658705], 16).removeClass('smoted').openPopup(mobilehomepopup);
 	}).addTo(map);
 	
 	var schoolCampus = L.easyButton ( 'far fa-square fa-lg', function(){
-		map.setView([34.050539, -117.825797], 14).openPopup(campuspopup);
+		map.setView([34.050539, -117.825797], 14).removeClass('smoted').openPopup(campuspopup);
 	}).addTo(map);
 	
 	var undeveloped = L.easyButton ( 'far fa-square fa-2x', function(){
-		map.setView([34.616725, -117.969721], 10).openPopup(undevelopedpopup);
+		map.setView([34.616725, -117.969721], 10).removeClass('smoted').openPopup(undevelopedpopup);
 	}).addTo(map);
 	
 	
