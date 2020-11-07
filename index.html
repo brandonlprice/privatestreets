@@ -151,7 +151,8 @@ var boundary1 = L.esri.featureLayer({
 
   var undevelopedshortpopup = L.popup({
     	autoClose:false,
-	 closeOnClick:false
+	 closeOnClick:false,
+	 className: 'smoted'
       })
     .setLatLng(L.latLng(34.616725, -117.969721))
     .setContent('<p><b>The Antelope Valley</b></p>');	
@@ -170,7 +171,8 @@ var boundary1 = L.esri.featureLayer({
 
  var campusshortpopup = L.popup({
     	autoClose:false,
-	closeOnClick:false
+	closeOnClick:false,
+	 className: 'smoted'
       })
     .setLatLng(L.latLng(34.050539, -117.825797))
     .setContent('<p><b>Cal Poly Pomona</b></p>');
@@ -189,7 +191,8 @@ var boundary1 = L.esri.featureLayer({
 
  var mobileshortpopup = L.popup({
     	autoClose:false,
-	 closeOnClick:false
+	 closeOnClick:false,
+	 className: 'smoted'
       })
     .setLatLng(L.latLng(34.236803, -118.658469))
     .setContent('<p><b>Summit Mobile Homes</b></p>');
@@ -209,25 +212,26 @@ var boundary1 = L.esri.featureLayer({
  
  var condoshortpopup = L.popup({
     	autoClose:false,
-	closeOnClick:false
+	closeOnClick:false,
+	 className: 'smoted'
       })
     .setLatLng(L.latLng(33.983356, -117.865723))
     .setContent('<p><b>Palatine Hills</b></p>');
 	
   var condoTract = L.easyButton ( 'far fa-square fa-xs', function(){
-		map.setView([33.983365, -117.866088], 17).openPopup(condopopup);
+		map.setView([33.983365, -117.866088], 17).openPopup(condopopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);;
 	}).addTo(map);
 	
 	 var mobileHome = L.easyButton ( 'far fa-square fa-sm', function(){
-		map.setView([34.236679, -118.658705], 16).openPopup(mobilehomepopup);
+		map.setView([34.236679, -118.658705], 16).openPopup(mobilehomepopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);;
 	}).addTo(map);
 	
 	var schoolCampus = L.easyButton ( 'far fa-square fa-lg', function(){
-		map.setView([34.050539, -117.825797], 14).openPopup(campuspopup);
+		map.setView([34.050539, -117.825797], 14).openPopup(campuspopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);;
 	}).addTo(map);
 	
 	var undeveloped = L.easyButton ( 'far fa-square fa-2x', function(){
-		map.setView([34.616725, -117.969721], 10).openPopup(undevelopedpopup);
+		map.setView([34.616725, -117.969721], 10).openPopup(undevelopedpopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);
 	}).addTo(map);
 	
 	
