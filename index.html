@@ -127,14 +127,14 @@ var boundary1 = L.esri.featureLayer({
 		});
   		boundary1.setStyle({
   			color: 'white',
-			weight: .65
+			weight: .85
 		}).addTo(map);
 	
   L.esri.featureLayer({
 		url: 'https://services9.arcgis.com/ZP6Sg2L0zjLDGQa9/arcgis/rest/services/privatestreets_160104_present/FeatureServer/0',
 		opacity: 0.95,
 		color: 'white',
-	        weight: 1
+	        weight: .75
   }).addTo(map);
   
   var undevelopedbounds = L.latLngBounds([[34.451221, -117.659712], [34.776072, -118.325764]]);
