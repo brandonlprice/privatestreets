@@ -219,25 +219,25 @@ var boundary1 = L.esri.featureLayer({
     .setContent('<p><b>Palatine Hills Condos</b></p>');
 	
   var condoTract = L.easyButton ( 'far fa-square fa-xs', function(){
-		map.setView([33.983365, -117.866088], 17).openPopup(condopopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);;
+		map.flyTo([33.983365, -117.866088], 17).openPopup(condopopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);;
 	}).addTo(map);
 	
 	 var mobileHome = L.easyButton ( 'far fa-square fa-sm', function(){
-		map.setView([34.236679, -118.658705], 16).openPopup(mobilehomepopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);;
+		map.flyTo([34.236679, -118.658705], 16).openPopup(mobilehomepopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);;
 	}).addTo(map);
 	
 	var schoolCampus = L.easyButton ( 'far fa-square fa-lg', function(){
-		map.setView([34.050539, -117.825797], 14).openPopup(campuspopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);;
+		map.flyTo([34.050539, -117.825797], 14).openPopup(campuspopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);;
 	}).addTo(map);
 	
 	var undeveloped = L.easyButton ( 'far fa-square fa-2x', function(){
-		map.setView([34.616725, -117.969721], 10).openPopup(undevelopedpopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);
+		map.flyTo([34.616725, -117.969721], 10).openPopup(undevelopedpopup).removeLayer(undevelopedshortpopup).removeLayer(campusshortpopup).removeLayer(condoshortpopup).removeLayer(mobileshortpopup);
 	}).addTo(map);
 	
 	
 	
 	var allbutton = L.easyButton ( 'fas fa-home', function(){
-		map.setView([34.282306, -118.384333], 9).addLayer(mobileshortpopup).addLayer(condoshortpopup).addLayer(campusshortpopup).addLayer(undevelopedshortpopup).removeLayer(undevelopedpopup).removeLayer(campuspopup).removeLayer(condopopup).removeLayer(mobilehomepopup);
+		map.flyTo([34.282306, -118.384333], 9).addLayer(mobileshortpopup).addLayer(condoshortpopup).addLayer(campusshortpopup).addLayer(undevelopedshortpopup).removeLayer(undevelopedpopup).removeLayer(campuspopup).removeLayer(condopopup).removeLayer(mobilehomepopup);
 	}).addTo(map);
 	
 	
